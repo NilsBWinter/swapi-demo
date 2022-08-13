@@ -1,25 +1,25 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    buildModules: [
-        // ...
-        [
-          '@pinia/nuxt',
-          {
-            autoImports: [
-              // automatically imports `usePinia()`
-              'defineStore',
-              // automatically imports `usePinia()` as `usePiniaStore()`
-              ['defineStore', 'definePiniaStore'],
-            ],
-          },
+  buildModules: [
+    // ...
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: [
+          // automatically imports `usePinia()`
+          "defineStore",
+          // automatically imports `usePinia()` as `usePiniaStore()`
+          ["defineStore", "definePiniaStore"],
         ],
-      ],
+      },
+    ],
+  ],
 
-      target: 'static',
+  target: "static",
 
-      router: {
-        base: '/<swapi-demo>/'
-      }
-})
+  router: {
+    base: "/swapi-demo/",
+  },
+});
