@@ -7,7 +7,7 @@ set -e
 npm i yarn
 
 # build
-yarn generate
+yarn build
 
 # navigate into the build output directory
 cd dist
