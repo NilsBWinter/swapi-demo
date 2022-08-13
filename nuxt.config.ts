@@ -16,4 +16,10 @@ export default defineNuxtConfig({
           },
         ],
       ],
+
+      target: 'static',
+
+      router: {
+        base: '/<swapi-demo>/'
+      }
 })
