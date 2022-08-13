@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt";
+import { build, defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -18,7 +18,9 @@ export default defineNuxtConfig({
   ],
 
   target: "static",
-  app: {
-    baseURL: '/swapi-demo/'
-  }
+
+  vite: {
+      // for gh pages
+      base: '/swapi-demo/',
+  },
 });
