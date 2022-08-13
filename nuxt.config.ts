@@ -19,8 +19,8 @@ export default defineNuxtConfig({
 
   target: "static",
 
-  vite: {
+  app: {
       // for gh pages
-      base: '/swapi-demo/',
-  },
+      baseURL: '/swapi-demo/',
+  }
 });
