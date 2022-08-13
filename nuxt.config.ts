@@ -18,8 +18,7 @@ export default defineNuxtConfig({
   ],
 
   target: "static",
-
-  router: {
-    base: "/swapi-demo/",
-  },
+  app: {
+    baseURL: '/swapi-demo/'
+  }
 });
